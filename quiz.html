@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Biologi SMP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4e3ef;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #52b3d3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: 2px solid #1e75bd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #0c5fad;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #5a9bd5;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4682b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-link:hover {
+            background-color: #5a9bd5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kuis Biologi SMP</h1>
+    </header>
+    <main>
+        <form id="quizForm">
+            <fieldset>
+                <legend>1. Manakah pernyataan berikut yang benar tentang sel prokariotik?</legend>
+                <label><input type="radio" name="question1" value="sel1"> Memiliki membran inti</label>
+                <label><input type="radio" name="question1" value="sel2"> Ukurannya lebih besar daripada sel eukariotik</label>
+                <label><input type="radio" name="question1" value="sel3"> Strukturnya lebih kompleks daripada sel eukariotik</label>
+                <label><input type="radio" name="question1" value="sel4"> Tidak memiliki organel yang terbungkus membran</label>
+            </fieldset>
+            <fieldset>
+                <legend>2. Jaringan pada organisme berperan penting dalam menjalankan fungsi-fungsi kehidupan.
+                           Salah satu pernyataan berikut yang tidak benar tentang jaringan adalah:
+                </legend>
+                <label><input type="radio" name="question2" value="jaringan1"> Jaringan pada tumbuhan mencakup pembuluh kayu dan pembuluh tapis</label>
+                <label><input type="radio" name="question2" value="jaringan2"> Hewan, termasuk manusia, memiliki jaringan seperti epitel, otot, tulang rawan, dan saraf                </label>
+                <label><input type="radio" name="question2" value="jaringan3">  Sel-sel dalam jaringan tidak bergantung satu sama lain</label>
+                <label><input type="radio" name="question2" value="jaringan4"> Jaringan memungkinkan organisme untuk mempertahankan hidupnya melalui kerja sama dan interaksi antarsel</label>
+            </fieldset>
+            <fieldset>
+                <legend>3. Organisme memiliki organ-organ yang terdiri dari berbagai jenis jaringan yang
+                           bekerja bersama untuk menjalankan fungsi tertentu dalam tubuh. Pernyataan berikut yang
+                           tidak benar tentang organ adalah:
+                </legend>
+                <label><input type="radio" name="question3" value="organ1"> Organ tumbuhan, seperti daun, terdiri dari berbagai jenis jaringan seperti epidermis, mesofil, dan pembuluh daun</label>
+                <label><input type="radio" name="question3" value="organ2"> Organ-organ pada hewan, seperti jantung, paru-paru, hati, dan ginjal, terdiri dari berbagai macam jaringan yang bekerja bersama untuk menjaga kelangsungan hidup organisme</label>
+                <label><input type="radio" name="question3" value="organ3"> Organ memiliki fungsi khusus dalam melakukan berbagai proses vital bagi organisme</label>
+                <label><input type="radio" name="question3" value="organ4"> Organisme tidak memiliki organ yang terdiri dari berbagai jenis jaringan</label>
+            </fieldset>
+            <fieldset>
+                <legend>4. Apa yang dimaksud dengan sistem organ?</legend>
+                <label><input type="radio" name="question4" value="sistem1"> Kumpulan sel yang memiliki fungsi terkait.</label>
+                <label><input type="radio" name="question4" value="sistem2"> Kelompok organ yang bekerja bersama untuk menjalankan fungsi tertentu.</label>
+                <label><input type="radio" name="question4" value="sistem3"> Unit struktural terkecil dalam hierarki kehidupan.</label>
+                <label><input type="radio" name="question4" value="sistem4"> Organisme yang terdiri dari berbagai macam organ.</label>
+            </fieldset>
+            <fieldset>
+                <legend>5. Manakah yang merupakan contoh sistem organ?</legend>
+                <label><input type="radio" name="question5" value="sistem1"> Prokariotik dan eukariotik.</label>
+                <label><input type="radio" name="question5" value="sistem2"> Jaringan epitel, otot, dan tulang rawan.</label>
+                <label><input type="radio" name="question5" value="sistem3"> Lambung, usus, dan hati dalam sistem pencernaan.</label>
+                <label><input type="radio" name="question5" value="sistem4"> Pembuluh darah dan pembuluh limfe.</label>
+            </fieldset>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="result"></div>
+        <a class="back-link" href="index.html">Kembali ke Daftar Materi</a>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
